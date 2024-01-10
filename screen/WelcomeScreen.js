@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View, Image, Touchable } from "react-native";
 import React from "react";
 import { TouchableOpacity } from "react-native-web";
+import { useNavigation } from "@react-navigation/native";
 
 const WelcomeScreen = () => {
     return (
         <View style={{ flex: 1, alignItems: "center"}}>
-            <Image source iki panggone logo />
+            <Image source={require("../assets/image/logo terak.png")}
+				style={{ marginTop: 30 }}
+			/>
 
             <Text style={{ color: "#f96163", fontSize: 22, fontWeight: "bold"}}>
                 100+ Premium Recipe
@@ -23,7 +26,7 @@ const WelcomeScreen = () => {
                 Chef Style Food Recipes
             </Text>
             <TouchableOpacity
-            // onPress={()=>} iki masukno navigation recipe list
+            onPress={() => navigation.navigate("RecipeList")}
                 style={{
                     backgroundColor: "#f96163",
                     borderRadius: 18,
