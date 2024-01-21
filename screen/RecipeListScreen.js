@@ -18,9 +18,18 @@ const RecipeListScreen = ({ icon, placeholder }) => {
                 style={{ marginTop: 22 }}
 				<Text style={{ fontSize: 22, fontWeight: "bold" }}>Categories</Text>
 				{/* Categories list */}
-				<CategoriesFilter />
+				<CategoriesFilter /> 
             </View>
-        </SafeAreaView>
+
+            {/* Recipe List Filter */}
+
+			<View style={{ marginTop: 22, flex: 1 }}>
+				<Text style={{ fontSize: 22, fontWeight: "bold" }}>Recipes</Text>
+				{/* Recipes list */}
+
+				<RecipeCard />
+			</View>
+		</SafeAreaView>
             
     );
 };
