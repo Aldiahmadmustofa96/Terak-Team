@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 const WelcomeScreen = () => {
     return (
         <View style={{ flex: 1, alignItems: "center"}}>
-            <Image source={require("../assets/image/logo terak.png")}
+            <Image source={require("../assets/image/hotdog.png")}
 				style={{ marginTop: 30 }}
 			/>
 
@@ -26,7 +26,7 @@ const WelcomeScreen = () => {
                 Chef Style Food Recipes
             </Text>
             <TouchableOpacity
-            onPress={() => navigation.navigate("RecipeList")}
+            onPress={() => useNavigation.navigate("RecipeList")}
                 style={{
                     backgroundColor: "#f96163",
                     borderRadius: 18,
