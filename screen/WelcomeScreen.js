@@ -11,7 +11,7 @@ const WelcomeScreen = () => {
 			/>
 
             <Text style={{ color: "#f96163", fontSize: 22, fontWeight: "bold"}}>
-                100+ Premium Recipe
+                100+ Resep Makanan
             </Text>
 
             <Text
@@ -23,7 +23,7 @@ const WelcomeScreen = () => {
                 marginBottom: 40,
             }}
             >
-                Chef Style Food Recipes
+                Resep Makanan
             </Text>
             <TouchableOpacity
             onPress={() => useNavigation.navigate("RecipeList")}
